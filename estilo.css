@@ -1,0 +1,120 @@
+body {
+    background-color: #dce1e2;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #bfeeff;
+    color: #000;
+    text-align: center;
+    padding: 5% 2%;
+    position: relative;
+    font-family: 'Chewy';
+    font-weight: 100;
+}
+
+header img {
+    width: 10%;
+    max-width: 80px;
+    position: absolute;
+}
+
+#GifCumple { left: 10%; top: 30%; }
+#GifCumple2 { right: 10%; top: 30%; }
+
+main {
+    position: relative    
+
+}
+
+
+section {
+    height: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px 5%;
+    border-radius: 3%;
+    background: #fff;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+
+
+.VideoCliente iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; /* Mantener la proporción */
+}
+
+
+
+
+
+section.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+h2 {
+    font-family: 'Chewy', cursive;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+}
+
+.Stickerei, #FocaLike {
+    width: 20%;
+    max-width: 150px;
+    margin-top: 10px;
+}
+.Texto4 {
+    color: #f6a9e4;
+}
+
+#audioControls {
+    margin-top: 20px;
+  }
+
+#playPauseBtn {
+    border-radius: 20%;
+    background-color: rgb(66, 244, 185);
+}
+
+
+#progressBar {
+    width: 100%;
+    cursor:grab;
+    border-radius: 10px;
+    appearance: none;
+    background-color: #bfeeff;
+    
+}
+
+
+#progressBar::-webkit-progress-bar {
+    background-color: #bfeeff;
+    border-radius: 10px;
+}
+
+#progressBar::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: #f6a9e4;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #bfeeff;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    header img {
+        width: 15%;
+        position: static;
+        display: block;
+        margin: 10px auto;
+    }
+}
