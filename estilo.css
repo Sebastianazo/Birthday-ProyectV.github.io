@@ -22,6 +22,15 @@ header img {
 
 #GifCumple { left: 10%; top: 30%; }
 #GifCumple2 { right: 10%; top: 30%; }
+#MapaGPS {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border: 2px solid rgb(255, 168, 246);
+    box-shadow: 0 0 15px;
+    display: block;
+    margin: 0 auto;
+}
 
 main {
     position: relative    
